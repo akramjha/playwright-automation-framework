@@ -169,15 +169,15 @@ test('Sidenav profile password', async ({ page }) => {
 
     await expect(currentPassword).toBeVisible();
     await expect(currentPassword).toBeEditable();
-    await currentPassword.fill('Password@12345');
+    await currentPassword.fill('12345678');
 
     await expect(newPassword).toBeVisible();
     await expect(newPassword).toBeEditable();
-    await newPassword.fill('Password@12345');
+    await newPassword.fill('12345678');
 
     await expect(confirmPassword).toBeVisible();
     await expect(confirmPassword).toBeEditable();
-    await confirmPassword.fill('Password@12345');
+    await confirmPassword.fill('12345678');
 
     const footer = page.locator('.client-modal-footer__r');
     const updateBtn = footer.getByRole('button', { name: 'Update' });
@@ -220,7 +220,7 @@ test('Sidenav profile password', async ({ page }) => {
 
     // verify values
     await expect(emailInput).toHaveValue('test@test.com');
-    await expect(passwordInput).toHaveValue('Password@12345');
+    await expect(passwordInput).toHaveValue('12345678');
 
     await Promise.all([page.waitForURL(/dashboard/, { timeout: 20000 }),signInBtn.click()]);
     await expect(page).toHaveURL(/dashboard/);
