@@ -94,17 +94,17 @@ playwright-automation-framework
 
 ## Screenshots
 
-### Playwright Execution
+### Framework Structure
+![Framework](Screenshots/framework-structure.png)
 
-(Add screenshot)
+### Playwright Test Execution
+![Execution](Screenshots/test-execution.png)
 
 ### Test Report
+![Report](Screenshots/playwright-report.png)
 
-(Add screenshot)
-
-### Jenkins Build
-
-(Add screenshot)
+### Jenkins Integration
+![Jenkins](Screenshots/jenkins-build-success.png)
 
 ---
 
