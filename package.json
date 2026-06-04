@@ -1,0 +1,19 @@
+{
+  "name": "automated-web-test02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:Jenkins": "cross-env BASE_URL=http://192.168.1.132:2888 FORCE_COLOR=0 PLAYWRIGHT_FORCE_TTY=0 CI=true npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.3",
+    "cross-env": "^10.1.0"
+  }
+}
