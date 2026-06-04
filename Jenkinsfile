@@ -10,8 +10,8 @@ pipeline {
     stage('Checkout') {
       steps {
         git branch: 'main',
-            url: 'git@github.com:Inistate/automated-web-test02.git',
-            credentialsId: 'github-deploykey-automatedweb2'
+            url: '',
+            credentialsId: ''
       }
     }
     
