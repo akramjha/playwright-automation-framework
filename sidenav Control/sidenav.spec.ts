@@ -6,7 +6,7 @@ test.describe('Sidenav Control + Switch Workspace', () => {
   test.beforeEach(async ({ page }) => {
     liteActions = new LiteActions(page);
     await liteActions.workspace.openLite();
-    await liteActions.workspace.switch('Inistate test 1');
+    await liteActions.workspace.switch('test 1');
   });
 
   test('Sidenav Control (Edit)', async ({ page }) => {
